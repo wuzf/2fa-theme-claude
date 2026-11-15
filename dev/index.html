@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Claude · 2FA 主题预览</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+    <link rel="stylesheet" href="/src/styles/application.css" />
+    <link rel="stylesheet" href="/src/styles/reading-room.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+      .dev-banner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 20px;
+        padding: 8px 16px;
+        background: #eee9df;
+        color: #5e574d;
+        font: 12px/1.6 system-ui;
+      }
+      .dev-banner button {
+        min-height: 32px;
+        border: 1px solid #c5bbad;
+        border-radius: 6px;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+      }
+      #dev-output {
+        max-width: 70ch;
+        overflow: auto;
+        margin: 0;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="dev-banner">
+      <span>主题预览 · 示例账户 · 操作不写入服务器</span>
+      <button type="button" id="dev-scheme">切换浅色 / 深色</button>
+      <output id="dev-output"></output>
+    </aside>
+    <div id="app"></div>
+    <script type="module" src="/dev/main.js"></script>
+  </body>
+</html>

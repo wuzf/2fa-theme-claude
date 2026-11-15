@@ -1,0 +1,52 @@
+/* Claude-inspired paper and clay. System fonts keep every surface self-contained. */
+.claude-theme {
+  --claude-canvas: #faf9f5;
+  --claude-panel: #ffffff;
+  --claude-ink: #262624;
+  --claude-muted: #6b6862;
+  --claude-track: #f0eee7;
+  --claude-line: #e2dfd6;
+  --claude-accent: #a74b2d;
+  --claude-accent-fill: #ba5836;
+  --claude-accent-text: #ffffff;
+  --claude-accent-soft: #f6e8df;
+  --claude-success: #417050;
+  --claude-red: #a83732;
+  --claude-red-soft: #fbe9e5;
+  --claude-amber: #8a621f;
+  --claude-amber-soft: #f8efd9;
+  --claude-font:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+  --claude-serif:
+    "Iowan Old Style", "Palatino Linotype", Georgia, "Songti SC", SimSun, serif;
+  --claude-display: var(--claude-serif);
+  --claude-mono:
+    "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --claude-content-width: 1120px;
+  --claude-focus: 2px solid var(--claude-accent);
+  --claude-popover-shadow: 0 8px 28px rgb(38 38 36 / 10%);
+  color-scheme: light;
+}
+.claude-theme[data-color-scheme="dark"] {
+  --claude-canvas: #242321;
+  --claude-panel: #2f2e2b;
+  --claude-ink: #f2f0e9;
+  --claude-muted: #bbb7ad;
+  --claude-track: #393731;
+  --claude-line: #49463f;
+  --claude-accent: #e59a78;
+  --claude-accent-fill: #e59a78;
+  --claude-accent-text: #242321;
+  --claude-accent-soft: #49352c;
+  --claude-success: #a8c9a6;
+  --claude-red: #f0a29b;
+  --claude-red-soft: #4b302c;
+  --claude-amber: #e9c27b;
+  --claude-amber-soft: #443925;
+  --claude-popover-shadow: 0 8px 28px rgb(0 0 0 / 22%);
+  color-scheme: dark;
+}
+.claude-theme[data-serif-headings="false"] {
+  --claude-display: var(--claude-font);
+}
